@@ -41,7 +41,7 @@
                 {
                     "1": "cafetera italiana",
                     "2": "taza",
-                    "3": "olla",
+                    "3": "olla lechero",
                     "4": "espumador de leche"
                 }
             ],
@@ -53,6 +53,60 @@
                     "4": "Con el espumador de leche, batir hasta formar espuma",
                     "5": "Verter la leche con cacao sobre el café formando dos capas",
                     "6": "Terminar poniendo crema chantilly sobre la preparación"
+                }
+            ]
+        },
+        {
+            "Nombre": "Bombón",
+            "Tiempo": "5 min",
+            "Ingredientes": [
+                {
+                    "1": "50 ml de leche condensada",
+                    "2": "30 ml de café espresso"
+                }
+            ],
+            "Productos": [
+                {
+                    "1": "cafetera espresso",
+                    "2": "taza"
+                }
+            ],
+            "Pasos": [
+                {
+                    "1": "Dentro de la taza, verter la leche condensada",
+                    "2": "Preparar el café utilizando la cafetera y servir en la taza sobre la leche condensada",
+                    "3": "Servir evitando que la leche y el café se mezclen"
+                }
+            ]
+        },
+        {
+            "Nombre": "Irlandés",
+            "Tiempo": "20 min",
+            "Ingredientes": [
+                {
+                    "1": "80 ml de café cargado",
+                    "2": "40 ml de Whisky",
+                    "3": "40 ml de crema batida",
+                    "4": "15 g de azúcar blanca",
+                    "5": "cacao en polvo"
+                }
+            ],
+            "Productos": [
+                {
+                    "1": "cafetera italiana",
+                    "2": "copa alargada",
+                    "3": "olla lechero",
+                    "4": "batidora de varillas"
+                }
+            ],
+            "Pasos": [
+                {
+                    "1": "Calentar la copa con agua tibia, así se evitará un choque de temperatura",
+                    "2": "Preparar el café cargado utilizando la cafetera",
+                    "3": "Echar el Whisky a la olla junto con el azúcar, mezclar y calentar hasta que llegue a hervir.",
+                    "4": "Si no quiere que la preparación tenga tanto alcohol, puede flambear el Whisky",
+                    "5": "Preparar la crema batida montandola con la batidora de varillas comenzado por la velocidad mínima",
+                    "6": "Quitar el agua de la copa, verter el café, luego el Whisky con azucar, se finaliza montando la crema sin mezclarla con el café y espolvorando cacao en polvo"
                 }
             ]
         }
