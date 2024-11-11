@@ -1,16 +1,18 @@
-# homecoffee
+Se creo una aplicación movil que permitira a los usuarios el aprender a preparar café, ademas de identificar
+los productos e ingredientes utilizados para dichas preparaciones.
+Ademas se podra compartir las recetas a traves de diferentes plataformas, también se podra ingresar la opinión de los usuarios en relacion a la aplicacion.
 
-A new Flutter project.
+Sistema: Debe de ser capaz de…
+  - mostrar diferentes métodos de preparación de café
+  - permitir la creación de nuevas recetas/guías para diferentes tipos de café
+  - permitir la personalización de recetas
+  - permitir que los usuarios califiquen las recetas de otros
+  - mostrar el promedio de calificaciones de las recetas de los usuarios
 
-## Getting Started
+Usuario: Debe ser capaz de…
+  - crear recetas/guías de preparaciones
+  - personalizar recetas
+  - compartir recetas
+  - implementar imagenes de apoyo para las recetas
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Link al video de Youtube: 
