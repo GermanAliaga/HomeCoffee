@@ -19,9 +19,8 @@ class CoffeCard extends StatelessWidget {
     return Scaffold(
         body: Center(
             child: Padding(
-                padding: const EdgeInsets.all(20.0),
+                padding: const EdgeInsets.all(10.0),
                 child: SizedBox(
-                  width: 450,
                   height: 200,
                   child: GestureDetector(
                       onTap: () {
@@ -68,7 +67,7 @@ class CoffeCard extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   const Text(
-                                    'Este café se prepara de la siguiente manera:\nIngredientes:\n- 100 ml de café\n- Helado de vainilla\nPreparación: ...\n',
+                                    'Este café se prepara así:\nIngredientes:\n- 100 ml de café\n- Helado de vainilla\nPreparación: ...\n',
                                     maxLines: 10,
                                   ),
                                   SvgPicture.asset(coffeImg,
