@@ -1,0 +1,60 @@
+{
+    "Recetas": [
+        {
+            "Nombre": "Affogato",
+            "Tiempo": "20 min",
+            "Ingredientes": [
+                {
+                    "1": "100 ml de café",
+                    "2": "150 g de helado de vainilla"
+                }
+            ],
+            "Productos": [
+                {
+                    "1": "cafetera italiana",
+                    "2": "taza",
+                    "3": "cuchara"
+                }
+            ],
+            "Pasos": [
+                {
+                    "1": "Preparar el café utilizando la cafetera",
+                    "2": "Colocar el helado dentro de la taza",
+                    "3": "Regar con el café el helado",
+                    "4": "Servir y disfrutar"
+                }
+            ]
+        },
+        {
+            "Nombre": "Mocaccino",
+            "Tiempo": "30 min",
+            "Ingredientes": [
+                {
+                    "1": "250 ml de café",
+                    "2": "100 ml de leche",
+                    "3": "10 g de cacao en polvo",
+                    "4": "azúcar a gusto",
+                    "5": "crema chantilly"
+                }
+            ],
+            "Productos": [
+                {
+                    "1": "cafetera italiana",
+                    "2": "taza",
+                    "3": "olla",
+                    "4": "espumador de leche"
+                }
+            ],
+            "Pasos": [
+                {
+                    "1": "Preparar el café utilizando la cafetera y servir en la taza",
+                    "2": "Dentro de una olla, a fuego lento, calentar la leche junto con el cacao y azúcar",
+                    "3": "Mezclar hasta antes que hierva y sacar del fuego la olla.",
+                    "4": "Con el espumador de leche, batir hasta formar espuma",
+                    "5": "Verter la leche con cacao sobre el café formando dos capas",
+                    "6": "Terminar poniendo crema chantilly sobre la preparación"
+                }
+            ]
+        }
+    ]
+}
