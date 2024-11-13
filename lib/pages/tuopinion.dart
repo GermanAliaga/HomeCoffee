@@ -33,29 +33,19 @@ class _TuopinionState extends State<Tuopinion> {
         body: CustomScrollView(
           slivers: <Widget>[
             SliverFixedExtentList(
-              itemExtent: 300.0,
+              itemExtent: 250.0,
               delegate: SliverChildBuilderDelegate(
                 (BuildContext context, int index) {
                   return Container(
-                      alignment: Alignment.center,
-                      child: Card(
-                          key: ValueKey(items[index]["id"]),
-                          margin: const EdgeInsets.all(10),
-                          color: const Color.fromARGB(248, 255, 160, 87),
-                          child: Column(children: [
-                            Text(
-                              items[index]["titulo"],
-                              style: const TextStyle(fontSize: 17),
-                            ),
-                            Text(
-                              items[index]["min"],
-                              style: const TextStyle(fontSize: 12),
-                            ),
-                            Text(
-                              items[index]["max"],
-                              style: const TextStyle(fontSize: 12),
-                            ),
-                          ])));
+                    key: ValueKey(items[index]["id"]),
+                    alignment: Alignment.center,
+                    child: const Column(
+                      children: [
+                        //Text(items[index]["titulo"]),
+                        //Text(items[index]["rango"]),
+                      ],
+                    ),
+                  );
                 },
                 childCount: items.length,
               ),
@@ -64,3 +54,28 @@ class _TuopinionState extends State<Tuopinion> {
         ));
   }
 }
+
+/*Padding(
+            padding: const EdgeInsets.all(25),
+            child: Column(children: [
+              ElevatedButton(
+                  onPressed: readJson, child: const Text("Cargar...")),
+              items.isNotEmpty
+                  ? Expanded(
+                      child: ListView.builder(
+                      // En este builder vamos a recorrer cada uno de los elementos de la List "items" que ya estan cargados del archivo data.json
+                      itemCount: items.length,
+                      itemBuilder: (context, index) {
+                        return Card(
+                            key: ValueKey(items[index]["id"]),
+                            margin: const EdgeInsets.all(10),
+                            color: Colors.amber.shade100,
+                            child: ListTile(
+                              minLeadingWidth: 200,
+                              title: Text(items[index]["titulo"]),
+                              leading: Text(items[index]["rango"]),
+                            ));
+                      },
+                    ))
+                  : Container()
+            ]))*/
