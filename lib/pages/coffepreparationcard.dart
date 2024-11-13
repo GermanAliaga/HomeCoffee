@@ -1,9 +1,27 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:homecoffee/pages/detailcoffeecard.dart';
 
-class CoffeCard extends StatelessWidget {
+class CoffeCard extends StatefulWidget {
   const CoffeCard({super.key});
+
+  @override
+  State<CoffeCard> createState() => _CoffeCardState();
+}
+
+class _CoffeCardState extends State<CoffeCard> {
+  List items = [];
+
+  Future<void> readJson() async {
+    final String response = await rootBundle.loadString("assets/recetas.json");
+    final data = await json.decode(response);
+    setState(() {
+      items = data["Recetas"];
+    });
+  }
 
   @override
   Widget build(BuildContext context) {

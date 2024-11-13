@@ -60,6 +60,7 @@ flutter:
       - assets/icons/Logo2.svg
       - assets/icons/Logo.png
       - assets/tuopinion.json
+      - assets/recetas.json
 
   fonts:
     - family: Caramel
