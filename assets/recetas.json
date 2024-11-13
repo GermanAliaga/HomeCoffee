@@ -1,114 +1,32 @@
 {
-    "Recetas": [
+    "recetas": [
         {
-            "Nombre": "Affogato",
-            "Tiempo": "20 min",
-            "Ingredientes": [
-                {
-                    "1": "100 ml de café",
-                    "2": "150 g de helado de vainilla"
-                }
-            ],
-            "Productos": [
-                {
-                    "1": "cafetera italiana",
-                    "2": "taza",
-                    "3": "cuchara"
-                }
-            ],
-            "Pasos": [
-                {
-                    "1": "Preparar el café utilizando la cafetera",
-                    "2": "Colocar el helado dentro de la taza",
-                    "3": "Regar con el café el helado",
-                    "4": "Servir y disfrutar"
-                }
-            ]
+            "nombre": "Affogato",
+            "tiempo": "20 min",
+            "ingredientes": "Ingredientes:\n-100 ml de café\n-150 g de helado de vainilla",
+            "productos": "Productos:\n-Cafetera italiana\n-Taza\n-Cuchara",
+            "pasos": "Pasos:\n-Preparar el café utilizando la cafetera\n-Colocar el helado dentro de la taza\n-Regar con el café el helado\n-Servir y disfrutar"
         },
         {
-            "Nombre": "Mocaccino",
-            "Tiempo": "30 min",
-            "Ingredientes": [
-                {
-                    "1": "250 ml de café",
-                    "2": "100 ml de leche",
-                    "3": "10 g de cacao en polvo",
-                    "4": "azúcar a gusto",
-                    "5": "crema chantilly"
-                }
-            ],
-            "Productos": [
-                {
-                    "1": "cafetera italiana",
-                    "2": "taza",
-                    "3": "olla lechero",
-                    "4": "espumador de leche"
-                }
-            ],
-            "Pasos": [
-                {
-                    "1": "Preparar el café utilizando la cafetera y servir en la taza",
-                    "2": "Dentro de una olla, a fuego lento, calentar la leche junto con el cacao y azúcar",
-                    "3": "Mezclar hasta antes que hierva y sacar del fuego la olla.",
-                    "4": "Con el espumador de leche, batir hasta formar espuma",
-                    "5": "Verter la leche con cacao sobre el café formando dos capas",
-                    "6": "Terminar poniendo crema chantilly sobre la preparación"
-                }
-            ]
+            "nombre": "Mocaccino",
+            "tiempo": "30 min",
+            "ingredientes": "Ingredientes:\n-250 ml de café\n-100 ml de leche\n-10 g de cacao en polvo\n-azúcar a gusto\n-crema chantilly",
+            "productos": "Productos:\n-Cafetera italiana\n-Taza\n-Olla lechero\n-Espumador de leche",
+            "pasos": "Pasos:\n-Preparar el café utilizando la cafetera y servir en la taza\n-Dentro de una olla, a fuego lento, calentar la leche junto con el cacao y azúcar\n-Mezclar hasta antes que hierva y sacar del fuego la olla.\n-Con el espumador de leche, batir hasta formar espuma\n-Verter la leche con cacao sobre el café formando dos capas\n-Terminar poniendo crema chantilly sobre la preparación"
         },
         {
-            "Nombre": "Bombón",
-            "Tiempo": "5 min",
-            "Ingredientes": [
-                {
-                    "1": "50 ml de leche condensada",
-                    "2": "30 ml de café espresso"
-                }
-            ],
-            "Productos": [
-                {
-                    "1": "cafetera espresso",
-                    "2": "taza"
-                }
-            ],
-            "Pasos": [
-                {
-                    "1": "Dentro de la taza, verter la leche condensada",
-                    "2": "Preparar el café utilizando la cafetera y servir en la taza sobre la leche condensada",
-                    "3": "Servir evitando que la leche y el café se mezclen"
-                }
-            ]
+            "nombre": "Bombón",
+            "tiempo": "5 min",
+            "ingredientes": "Ingredientes:\n-50 ml de leche condensada\n-30 ml de café espresso",
+            "productos": "Productos:\n-Cafetera espresso\n-Taza",
+            "pasos": "Pasos:\n-Dentro de la taza, verter la leche condensada\n-Preparar el café utilizando la cafetera y servir en la taza sobre la leche condensada\n-Servir evitando que la leche y el café se mezclen"
         },
         {
-            "Nombre": "Irlandés",
-            "Tiempo": "20 min",
-            "Ingredientes": [
-                {
-                    "1": "80 ml de café cargado",
-                    "2": "40 ml de Whisky",
-                    "3": "40 ml de crema batida",
-                    "4": "15 g de azúcar blanca",
-                    "5": "cacao en polvo"
-                }
-            ],
-            "Productos": [
-                {
-                    "1": "cafetera italiana",
-                    "2": "copa alargada",
-                    "3": "olla lechero",
-                    "4": "batidora de varillas"
-                }
-            ],
-            "Pasos": [
-                {
-                    "1": "Calentar la copa con agua tibia, así se evitará un choque de temperatura",
-                    "2": "Preparar el café cargado utilizando la cafetera",
-                    "3": "Echar el Whisky a la olla junto con el azúcar, mezclar y calentar hasta que llegue a hervir.",
-                    "4": "Si no quiere que la preparación tenga tanto alcohol, puede flambear el Whisky",
-                    "5": "Preparar la crema batida montandola con la batidora de varillas comenzado por la velocidad mínima",
-                    "6": "Quitar el agua de la copa, verter el café, luego el Whisky con azucar, se finaliza montando la crema sin mezclarla con el café y espolvorando cacao en polvo"
-                }
-            ]
+            "nombre": "Irlandés",
+            "tiempo": "20 min",
+            "ingredientes":  "Ingredientes:\n-80 ml de café cargado\n-40 ml de Whisky\n-40 ml de crema batida\n-15 g de azúcar blanca\n-cacao en polvo",
+            "productos": "Productos:\n-Cafetera italiana\n-Copa alargada\n-Olla lechero\n-Batidora de varillas",
+            "pasos": "Pasos:\n-Calentar la copa con agua tibia, así se evitará un choque de temperatura\n-Preparar el café cargado utilizando la cafetera\n-Echar el Whisky a la olla junto con el azúcar, mezclar y calentar hasta que llegue a hervir.\n-Si no quiere que la preparación tenga tanto alcohol, puede flambear el Whisky\n-Preparar la crema batida montandola con la batidora de varillas comenzado por la velocidad mínima\n-Quitar el agua de la copa, verter el café, luego el Whisky con azucar, se finaliza montando la crema sin mezclarla con el café y espolvorando cacao en polvo"
         }
     ]
 }
