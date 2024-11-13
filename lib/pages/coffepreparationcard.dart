@@ -5,16 +5,11 @@ import 'package:homecoffee/pages/detailcoffeecard.dart';
 class CoffeCard extends StatelessWidget {
   const CoffeCard({super.key});
 
-  void _goTo(BuildContext context) {}
-
   @override
   Widget build(BuildContext context) {
     String coffeImg = "assets/icons/5404318_coffee_cup_glass_hot_icon.svg";
     String starImg = "assets/icons/216411_star_icon.svg";
     String personImg = "assets/icons/9035990_person_circle_sharp_icon.svg";
-
-    const Key centerKey = ValueKey<String>('bottom-sliver-list');
-    List<int> bottom = <int>[0];
 
     return Scaffold(
         body: Center(
@@ -27,11 +22,12 @@ class CoffeCard extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Detailcoffeecard()));
+                                builder: (context) =>
+                                    const Detailcoffeecard()));
                       },
                       child: Card(
                         elevation: 10,
-                        color: Color.fromARGB(248, 250, 239, 229),
+                        color: const Color.fromARGB(248, 250, 239, 229),
                         child: Column(
                             mainAxisSize: MainAxisSize.min,
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -45,7 +41,7 @@ class CoffeCard extends StatelessWidget {
                                         SvgPicture.asset(personImg,
                                             semanticsLabel: 'perfil image',
                                             width: 50),
-                                        Text(
+                                        const Text(
                                           'Nombre creador',
                                           style: TextStyle(fontSize: 15),
                                         )

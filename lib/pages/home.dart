@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
           title: const Text('Home'),
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         ),
-        drawer: MyDrawer(),
+        drawer: const MyDrawer(),
         body: CustomScrollView(
           slivers: <Widget>[
             SliverFixedExtentList(
@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
                 (BuildContext context, int index) {
                   return Container(
                     alignment: Alignment.center,
-                    child: CoffeCard(),
+                    child: const CoffeCard(),
                   );
                 },
                 childCount: 15,
