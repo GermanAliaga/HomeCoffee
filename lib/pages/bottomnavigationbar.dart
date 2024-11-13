@@ -3,7 +3,6 @@ import 'package:homecoffee/pages/favcoffees.dart';
 import 'package:homecoffee/pages/home.dart';
 import 'package:homecoffee/pages/perfil.dart';
 import 'package:homecoffee/pages/products.dart';
-import 'package:homecoffee/pages/searchbar.dart';
 
 class BottomNavigationBarExample extends StatefulWidget {
   const BottomNavigationBarExample({super.key});
@@ -19,14 +18,11 @@ class _BottomNavigationBarExampleState
 
   int _selectedIndex = 0;
 
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.normal);
-
   static const List<Widget> _widgetOptions = <Widget>[
-    const HomePage(),
-    const FavoriteCoffees(),
-    const Products(),
-    const Perfil()
+    HomePage(),
+    FavoriteCoffees(),
+    Products(),
+    Perfil()
   ];
 
   void _onItemTapped(int index) {
@@ -44,11 +40,11 @@ class _BottomNavigationBarExampleState
         //child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color.fromARGB(248, 255, 206, 160),
+        backgroundColor: const Color.fromARGB(248, 255, 206, 160),
         type: BottomNavigationBarType.fixed,
         iconSize: 40,
         elevation: 20,
-        unselectedItemColor: Color.fromARGB(248, 33, 33, 33),
+        unselectedItemColor: const Color.fromARGB(248, 33, 33, 33),
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),

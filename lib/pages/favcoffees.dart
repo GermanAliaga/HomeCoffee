@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:homecoffee/pages/bottomnavigationbar.dart';
 import 'package:homecoffee/pages/coffepreparationcard.dart';
-import 'package:homecoffee/pages/myhomepage.dart';
 
 class FavoriteCoffees extends StatefulWidget {
   const FavoriteCoffees({super.key});
