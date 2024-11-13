@@ -18,10 +18,10 @@ class _TuopinionState extends State<Tuopinion> {
   */
   Future<void> readJson() async {
     final String response =
-        await rootBundle.loadString("assets/jsons/tuopinion.json");
+        await rootBundle.loadString("assets/tuopinion.json");
     final data = await json.decode(response);
     setState(() {
-      items = data["items"];
+      items = data["usabilidad"];
     });
   }
 
@@ -46,15 +46,15 @@ class _TuopinionState extends State<Tuopinion> {
                         return Card(
                             key: ValueKey(items[index]["id"]),
                             margin: const EdgeInsets.all(10),
-                            color: Colors.amber.shade100,
-                            child: ListTile(
-                              leading: Text(items[index][
-                                  "id"]), // Asignamos el parametro ID del elemento
-                              title: Text(items[index][
-                                  "name"]), // Asignamos el parametro NAME del elemento
-                              subtitle: Text(items[index][
-                                  "description"]), // Asignamos el parametro DESCRIPTION del elemento
-                            ));
+                            color: const Color.fromARGB(249, 232, 169, 122),
+                            child: Column(children: [
+                              Text(items[index][
+                                  "titulo"]), // Asignamos el parametro ID del elemento
+                              Text(items[index][
+                                  "min"]), // Asignamos el parametro NAME del elemento
+                              Text(items[index][
+                                  "max"]), // Asignamos el parametro DESCRIPTION del elemento
+                            ]));
                       },
                     ))
                   : Container()
