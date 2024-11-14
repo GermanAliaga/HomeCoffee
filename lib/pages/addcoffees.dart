@@ -56,7 +56,9 @@ class _AddCoffeesState extends State<AddCoffees> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     ElevatedButton(
-                        onPressed: () {}, child: Text('+Cafetera italiana')),
+                        onPressed: () {},
+                        child: Text('+Cafetera\nitaliana',
+                            style: TextStyle(fontSize: 10))),
                     ElevatedButton(
                         onPressed: () {}, child: Text('+Filtro papel')),
                     ElevatedButton(onPressed: () {}, child: Text('+Espumador')),

@@ -51,19 +51,7 @@ class _MibaristaState extends State<Mibarista> {
                                   Text(
                                     items[index]["tiempo"],
                                     style: const TextStyle(fontSize: 12),
-                                  ),
-                                  Text(
-                                    items[index]["ingredientes"],
-                                    style: const TextStyle(fontSize: 12),
-                                  ),
-                                  Text(
-                                    items[index]["productos"],
-                                    style: const TextStyle(fontSize: 12),
-                                  ),
-                                  Text(
-                                    items[index]["pasos"],
-                                    style: const TextStyle(fontSize: 12),
-                                  ),
+                                  )
                                 ])));
                       },
                     ))
