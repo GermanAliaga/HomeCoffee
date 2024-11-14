@@ -3,33 +3,33 @@ import 'package:homecoffee/models/comentario.dart';
 import 'package:homecoffee/models/receta.dart';
 
 class Person extends ChangeNotifier {
-  late String ID;
-  late String nombre = "Joe Doe";
-  late String calificacion = "4.6";
-  var listaRecetas = <Receta>{};
-  var listaComentarios = <Comentario>{};
-  var listaFavoritos = <Receta>{};
-  late String imagenPerfil;
-  late String correo;
-  late String contrasena;
-}
+  String id = '';
+  String nombre = 'Joe Doe';
+  String calificacion = '4.6';
+  List<Receta> listaRecetas = [];
+  List<Comentario> listaComentarios = [];
+  List<Receta> listaFavoritos = [];
+  String imagenPerfil = '';
+  String correo = '';
+  String contrasena = '';
 
-void crearReceta() {
-  // Info
-}
+  // Método para agregar una receta y notificar
+  void agregarReceta(Receta receta) {
+    listaRecetas.add(receta);
+    notifyListeners();
+  }
 
-void gustarReceta() {
-  // Info
-}
+  // Método para agregar un comentario y notificar
+  void agregarComentario(Comentario comentario) {
+    listaComentarios.add(comentario);
+    notifyListeners();
+  }
 
-void calificarReceta() {
-  // Info
-}
-
-void calcularCalificacion() {
-  // Info
-}
-
-void comentar() {
-  // Info
+  // Método para marcar receta como favorita
+  void marcarFavorito(Receta receta) {
+    if (!listaFavoritos.contains(receta)) {
+      listaFavoritos.add(receta);
+      notifyListeners();
+    }
+  }
 }

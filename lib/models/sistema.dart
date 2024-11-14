@@ -4,15 +4,19 @@ import 'package:homecoffee/models/producto.dart';
 import 'package:homecoffee/models/receta.dart';
 
 class Sistema extends ChangeNotifier {
-  var listaUsuarios = <Person>{};
-  var listaRecetas = <Receta>{};
-  var listaProductos = <Producto>{};
-}
+  List<Person> listaUsuarios = [];
+  List<Receta> listaRecetas = [];
+  List<Producto> listaProductos = [];
 
-void registrarUsuario() {
-  // Info
-}
+  // Método para registrar un usuario y notificar
+  void registrarUsuario(Person usuario) {
+    listaUsuarios.add(usuario);
+    notifyListeners();
+  }
 
-void crearProducto() {
-  // Info
+  // Método para agregar un producto y notificar
+  void crearProducto(Producto producto) {
+    listaProductos.add(producto);
+    notifyListeners();
+  }
 }
