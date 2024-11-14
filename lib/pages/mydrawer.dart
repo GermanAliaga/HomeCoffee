@@ -13,45 +13,48 @@ class MyDrawer extends StatelessWidget {
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
-          const DrawerHeader(
-            decoration: BoxDecoration(
-              color: Color.fromARGB(249, 232, 169, 122),
-            ),
-            child: Text(
-              'HomeCoffee',
-              style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
+          const SizedBox(
+            height: 125,
+            child: DrawerHeader(
+              decoration: BoxDecoration(
+                color: Color.fromARGB(249, 232, 169, 122),
+              ),
+              child: Text(
+                'HomeCoffee',
+                style: TextStyle(fontSize: 30),
               ),
             ),
           ),
           ListTile(
-            leading: const Icon(Icons.home),
             title: const Text('Home page'),
             onTap: () {
-              Navigator.of(context).pushReplacementNamed('/home');
+              Navigator.pop(context);
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const HomePage()));
             },
           ),
           ListTile(
-            leading: const Icon(Icons.local_cafe),
             title: const Text('Mi barista'),
             onTap: () {
-              Navigator.of(context).pushReplacementNamed('/mibarista');
+              Navigator.pop(context);
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const Mibarista()));
             },
           ),
           ListTile(
-            leading: const Icon(Icons.feedback),
             title: const Text('Tu opinión'),
             onTap: () {
-              Navigator.of(context).pushReplacementNamed('/tuopinion');
+              Navigator.pop(context);
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const Tuopinion()));
             },
           ),
           ListTile(
-            leading: const Icon(Icons.person),
             title: const Text('Perfil'),
             onTap: () {
-              Navigator.of(context).pushReplacementNamed('/perfil');
+              Navigator.pop(context);
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const Perfil()));
             },
           ),
         ],

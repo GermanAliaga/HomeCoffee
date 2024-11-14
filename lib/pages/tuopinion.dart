@@ -71,7 +71,7 @@ class _TuopinionState extends State<Tuopinion> {
                               value: sliderValues[index],
                               max: 5,
                               divisions: 5,
-                              label: sliderValues[index].toString(),
+                              label: sliderValues[index].round().toString(),
                               onChanged: (double value) {
                                 setState(() {
                                   sliderValues[index] = value;
