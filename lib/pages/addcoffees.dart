@@ -42,10 +42,18 @@ class _AddCoffeesState extends State<AddCoffees> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    ElevatedButton(onPressed: () {}, child: Text('+Leche')),
-                    ElevatedButton(onPressed: () {}, child: Text('+Crema')),
-                    ElevatedButton(onPressed: () {}, child: Text('+Café')),
-                    ElevatedButton(onPressed: () {}, child: Text('+Azúcar')),
+                    ElevatedButton(
+                        onPressed: () {},
+                        child: Text('+Leche', style: TextStyle(fontSize: 10))),
+                    ElevatedButton(
+                        onPressed: () {},
+                        child: Text('+Crema', style: TextStyle(fontSize: 10))),
+                    ElevatedButton(
+                        onPressed: () {},
+                        child: Text('+Café', style: TextStyle(fontSize: 10))),
+                    ElevatedButton(
+                        onPressed: () {},
+                        child: Text('+Azúcar', style: TextStyle(fontSize: 10))),
                   ],
                 ),
                 Text(
@@ -60,8 +68,13 @@ class _AddCoffeesState extends State<AddCoffees> {
                         child: Text('+Cafetera\nitaliana',
                             style: TextStyle(fontSize: 10))),
                     ElevatedButton(
-                        onPressed: () {}, child: Text('+Filtro papel')),
-                    ElevatedButton(onPressed: () {}, child: Text('+Espumador')),
+                        onPressed: () {},
+                        child: Text('+Filtro\npapel',
+                            style: TextStyle(fontSize: 10))),
+                    ElevatedButton(
+                        onPressed: () {},
+                        child:
+                            Text('+Espumador', style: TextStyle(fontSize: 10))),
                   ],
                 ),
                 Text(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:homecoffee/models/comentario.dart';
-import 'package:homecoffee/models/mibarista.dart';
+import 'package:homecoffee/models/barista.dart';
 import 'package:homecoffee/models/person.dart';
 import 'package:homecoffee/models/producto.dart';
 import 'package:homecoffee/models/receta.dart';
