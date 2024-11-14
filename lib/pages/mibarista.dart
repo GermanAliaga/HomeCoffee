@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:homecoffee/pages/mydrawer.dart';
@@ -13,49 +12,66 @@ class Mibarista extends StatefulWidget {
 class _MibaristaState extends State<Mibarista> {
   List items = [];
 
+  @override
+  void initState() {
+    super.initState();
+    readJson();
+  }
+
   Future<void> readJson() async {
-    final String response = await rootBundle.loadString("assets/recetas.json");
-    final data = await json.decode(response);
-    setState(() {
-      items = data["recetas"];
-    });
+    try {
+      final String response =
+          await rootBundle.loadString("assets/recetas.json");
+      final data = await json.decode(response);
+      setState(() {
+        items = data["recetas"] ?? [];
+      });
+    } catch (e) {
+      print('Error al cargar el archivo JSON: $e');
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("Mi barista"),
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        ),
-        drawer: const MyDrawer(),
-        body: Padding(
-            padding: const EdgeInsets.all(10),
-            child: Column(children: [
-              items.isNotEmpty
-                  ? Expanded(
-                      child: ListView.builder(
-                      itemCount: items.length,
-                      itemBuilder: (context, index) {
-                        return Card(
-                            key: ValueKey(items[index]["id"]),
-                            margin: const EdgeInsets.all(5),
-                            color: const Color.fromARGB(249, 232, 169, 122),
-                            child: Padding(
-                                padding: const EdgeInsets.all(10),
-                                child: Column(children: [
-                                  Text(
-                                    items[index]["nombre"],
-                                    style: const TextStyle(fontSize: 17),
-                                  ),
-                                  Text(
-                                    items[index]["tiempo"],
-                                    style: const TextStyle(fontSize: 12),
-                                  )
-                                ])));
-                      },
-                    ))
-                  : Container()
-            ])));
+      appBar: AppBar(
+        title: const Text("Mi barista"),
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+      ),
+      drawer: const MyDrawer(),
+      body: Padding(
+        padding: const EdgeInsets.all(10),
+        child: items.isNotEmpty
+            ? Expanded(
+                child: ListView.builder(
+                  itemCount: items.length,
+                  itemBuilder: (context, index) {
+                    return Card(
+                      key: ValueKey(items[index]["id"]),
+                      margin: const EdgeInsets.all(5),
+                      color: const Color.fromARGB(249, 232, 169, 122),
+                      child: Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Column(
+                          children: [
+                            Text(
+                              items[index]["nombre"],
+                              style: const TextStyle(fontSize: 17),
+                            ),
+                            Text(
+                              items[index]["tiempo"],
+                              style: const TextStyle(fontSize: 12),
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              )
+            : const Center(
+                child: CircularProgressIndicator()), // Indicador de carga
+      ),
+    );
   }
 }

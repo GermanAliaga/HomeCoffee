@@ -3,19 +3,21 @@ import 'package:homecoffee/models/producto.dart';
 import 'package:homecoffee/pages/comments.dart';
 
 class Receta extends ChangeNotifier {
-  late String ID;
-  late String nombre;
-  late String calificacion;
-  late String creador;
-  late bool estadoFav;
-  late String descripcion;
-  late String tiempoPrep;
-  var listaIngredientes = <Producto>{};
-  var listaInstrumentos = <Producto>{};
-  var listaComentarios = <Comments>{};
-  late String imagenRef;
-}
+  String id = '';
+  String nombre = '';
+  String calificacion = '';
+  String creador = '';
+  bool estadoFav = false;
+  String descripcion = '';
+  String tiempoPrep = '';
+  List<Producto> listaIngredientes = [];
+  List<Producto> listaInstrumentos = [];
+  List<Comments> listaComentarios = [];
+  String imagenRef = '';
 
-void calcularCalificacion() {
-  // Info
+  // Método para calcular la calificación y notificar
+  void calcularCalificacion() {
+    // Implementación de la lógica de cálculo
+    notifyListeners(); // Notifica cambios a los consumidores
+  }
 }
