@@ -3,7 +3,20 @@ import 'package:flutter_svg/svg.dart';
 import 'package:homecoffee/pages/comments.dart';
 
 class Detailcoffeecard extends StatefulWidget {
-  const Detailcoffeecard({super.key});
+  const Detailcoffeecard({
+    super.key,
+    /*required this.Nombre,
+    required this.Tiempo,
+    required this.Ingredientes,
+    required this.Productos,
+    required this.Pasos,*/
+  });
+
+  /*final String Nombre;
+  final String Tiempo;
+  final String Ingredientes;
+  final String Productos;
+  final String Pasos;*/
 
   @override
   State<Detailcoffeecard> createState() => _DetailCardState();
@@ -31,10 +44,6 @@ class _DetailCardState extends State<Detailcoffeecard> {
                   personImg,
                   semanticsLabel: 'profile picture',
                   width: 80,
-                ),
-                Text(
-                  'Nombre creador',
-                  style: TextStyle(fontSize: 20),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,

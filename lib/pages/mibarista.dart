@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:homecoffee/pages/detailcoffeecard.dart';
 import 'package:homecoffee/pages/mydrawer.dart';
 
 class Mibarista extends StatefulWidget {
@@ -46,26 +47,34 @@ class _MibaristaState extends State<Mibarista> {
                 child: ListView.builder(
                   itemCount: items.length,
                   itemBuilder: (context, index) {
-                    return Card(
-                      key: ValueKey(items[index]["id"]),
-                      margin: const EdgeInsets.all(5),
-                      color: const Color.fromARGB(248, 255, 192, 143),
-                      child: Padding(
-                        padding: const EdgeInsets.all(10),
-                        child: Column(
-                          children: [
-                            Text(
-                              items[index]["nombre"],
-                              style: const TextStyle(fontSize: 17),
+                    return GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const Detailcoffeecard()));
+                        },
+                        child: Card(
+                          key: ValueKey(items[index]["id"]),
+                          margin: const EdgeInsets.all(5),
+                          color: const Color.fromARGB(248, 255, 192, 143),
+                          child: Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Column(
+                              children: [
+                                Text(
+                                  items[index]["nombre"],
+                                  style: const TextStyle(fontSize: 17),
+                                ),
+                                Text(
+                                  items[index]["tiempo"],
+                                  style: const TextStyle(fontSize: 12),
+                                ),
+                              ],
                             ),
-                            Text(
-                              items[index]["tiempo"],
-                              style: const TextStyle(fontSize: 12),
-                            ),
-                          ],
-                        ),
-                      ),
-                    );
+                          ),
+                        ));
                   },
                 ),
               )
