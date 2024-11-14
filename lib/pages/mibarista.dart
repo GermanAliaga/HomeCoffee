@@ -49,7 +49,7 @@ class _MibaristaState extends State<Mibarista> {
                     return Card(
                       key: ValueKey(items[index]["id"]),
                       margin: const EdgeInsets.all(5),
-                      color: const Color.fromARGB(249, 232, 169, 122),
+                      color: const Color.fromARGB(248, 255, 192, 143),
                       child: Padding(
                         padding: const EdgeInsets.all(10),
                         child: Column(

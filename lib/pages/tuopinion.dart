@@ -53,7 +53,7 @@ class _TuopinionState extends State<Tuopinion> {
                     return Card(
                       key: ValueKey(index),
                       margin: const EdgeInsets.all(5),
-                      color: const Color.fromARGB(249, 232, 169, 122),
+                      color: const Color.fromARGB(248, 255, 192, 143),
                       child: Padding(
                         padding: const EdgeInsets.all(10),
                         child: Column(
